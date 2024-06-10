@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'DS-Digital'; 
+    src: url('./Fonts/DS-DIGI.TTF'); 
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, rgb(88, 72, 128), #b2b9bb, #2273dd);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    
+}
+
+.calculator-container {
+    text-align: center;
+}
+
+.calculator-container h1 {
+    color: #ebeef1;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom right, #286283, #7961ce);
+    border-radius: 5px;
+    box-shadow: 4px 5px 6px rgb(255, 255, 255);
+    padding: 5px;
+    font-family: 'DS-Digital', sans-serif;
+}
+.calculator {
+    background: linear-gradient(to bottom right, #286283, #7961ce);
+    border: 5px solid #d3e4ec;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgb(235, 255, 252);
+    width: 320px;
+    padding: 20px;
+}
+
+.calculator-display {
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: right;
+    font-size: 2em;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 5px rgba(245, 235, 235, 0.822);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: 'DS-Digital', sans-serif;
+    font-weight: 700;
+ 
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    font-family: 'DS-Digital', sans-serif;
+    font-weight: 700;
+    background: linear-gradient(to bottom, #198f8f, #047c7c);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.5em;
+    color: #fff;
+    box-shadow: 0 4px #4ee2e2;
+    transition: all 0.1s ease;
+    cursor: pointer; /* Cambiamos el cursor a pointer */
+}
+
+.btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 #009ac8;
+}
+
+.btn:hover{
+    background: linear-gradient(to bottom, #83ebeb, #5fc4c4b6);
+}
+
+
+.operator {
+    background: linear-gradient(to bottom, #ef5800, #BF4300);
+    box-shadow: 0 4px #e4b6ab;
+}
+
+.operator:hover{
+    background: linear-gradient(to bottom, #e29466ef, #e26724bb);
+  
+}
+
+.equal {
+    background: linear-gradient(to bottom, #32cd32, #228b22);
+    box-shadow: 0 4px #a5eca5;
+}
+
+.equal:hover{
+    background: linear-gradient(to bottom, #8de48d, #70d670ad);
+  
+}
+
+.clear {
+    background: linear-gradient(to bottom, #ff1e1e, #cc0000);
+    box-shadow: 0 4px #e9a8a8;
+}
+
+.clear:hover{
+    background: linear-gradient(to bottom, #e28181, #e97f7f9c);
+}
+
+.clear-entry {
+    background: linear-gradient(to bottom, #6820ee, #450185);
+    box-shadow: 0 4px #b8a4ee;
+}
+
+.clear-entry:hover{
+    background: linear-gradient(to bottom, #a881f0, #b384dfab);
+}
+
+
+
+.special {
+    background: linear-gradient(to bottom, #9fac29, #525a06);
+    box-shadow: 0 4px #eef591;
+}
+.special:hover{
+    background: linear-gradient(to bottom, #e6f08d, #d5df7ba8);
+}
+
+@media (max-width: 600px) {
+    .calculator {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .btn {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+}
