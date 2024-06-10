@@ -15,7 +15,7 @@
 - **Operaciones con paréntesis (" `(` ` )` "):** Permite operaciones que impliquen paréntesis para agrupar operaciones, multiplicar, etc.
 - **Operaciones con decimales (" `.` "):** Permite realizar operaciones que impliquen numeros decimales.
 
-## Funciones JavaScript:
+## JavaScript:
 
 ### Variables:
 
