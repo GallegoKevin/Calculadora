@@ -145,7 +145,7 @@ body {
 
 @media (max-width: 600px) {
     .calculator {
-        width: 90%;
+        width: 100%;
         padding: 10px;
     }
 
